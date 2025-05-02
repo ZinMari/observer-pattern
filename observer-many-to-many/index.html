@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+    <title>Observer pattern</title>
+</head>
+
+<body>
+    <div class="publishers">
+        <form name="newyork" class="publishers__publisher">
+            <h3 class="publishers__title">New York Times</h3>
+            <textarea class="publishers__field" name="newyork"></textarea>
+            <button class="publishers__btn" type="button">Publish</button>
+        </form>
+
+        <form name="washington" class="publishers__publisher">
+            <h3 class="publishers__title">The Washington Post</h3>
+            <textarea class="publishers__field" name="washington"></textarea>
+            <button class="publishers__btn" type="button">Publish</button>
+        </form>
+    </div>
+
+    <div class="readers">
+        <div id="Roma" class="readers__reader">
+            <h3 class="readers__title">Roma</h3>
+            <details class="readers__publisher readers__publisher--unsubscribed newyorkDetails">
+                <summary class="readers__publisher-title">New York Times</summary>
+                <div class="readers__publisher-content"></div>
+            </details>
+            <details class="readers__publisher readers__publisher--unsubscribed washingtonDetails">
+                <summary class="readers__publisher-title">The Washington Post</summary>
+                <div class="readers__publisher-content"></div>
+            </details>
+            <button class="readers__btn newyorkSubscribeBtn">Subscribe New York Times</button>
+            <button class="readers__btn washingtonSubscribeBtn">Subscribe Washington Post</button>
+        </div>
+
+        <div id="Vasya" class="readers__reader">
+            <h3 class="readers__title">Vasya</h3>
+            <details class="readers__publisher readers__publisher--unsubscribed newyorkDetails">
+                <summary class="readers__publisher-title">New York Times</summary>
+                <div class="readers__publisher-content"></div>
+            </details>
+            <details class="readers__publisher readers__publisher--unsubscribed washingtonDetails">
+                <summary class="readers__publisher-title">The Washington Post</summary>
+                <div class="readers__publisher-content"></div>
+            </details>
+            <button class="readers__btn newyorkSubscribeBtn">Subscribe New York Times</button>
+            <button class="readers__btn washingtonSubscribeBtn">Subscribe Washington Post</button>
+        </div>
+
+        <div id="John" class="readers__reader">
+            <h3 class="readers__title">John</h3>
+            <details class="readers__publisher readers__publisher--unsubscribed newyorkDetails">
+                <summary class="readers__publisher-title">New York Times</summary>
+                <div class="readers__publisher-content"></div>
+            </details>
+            <details class="readers__publisher readers__publisher--unsubscribed washingtonDetails">
+                <summary class="readers__publisher-title">The Washington Post</summary>
+                <div class="readers__publisher-content"></div>
+            </details>
+            <button class="readers__btn newyorkSubscribeBtn">Subscribe New York Times</button>
+            <button class="readers__btn washingtonSubscribeBtn">Subscribe Washington Post</button>
+        </div>
+    </div>
+</body>
+
+</html>
