@@ -82,6 +82,3 @@ reader2.subscribe(newyourk)
 
 newyourk.attach(reader3);
 reader3.subscribe(newyourk)
-
-newyourk.detach(reader2);
-reader2.unsubscribe();
